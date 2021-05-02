@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Beatmaker</title>
+</head>
+<body>
+    <div class="sequencer">
+        <div class="kick-track">
+            <div class="controls">
+                <h1>Kick</h1>
+                <button data-track ="0" class="mute kick-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="kick-select" id="kick-select">
+                    <option value="./sounds/kick-classic.mp3">Classic Kick</option>
+                    <option value="./sounds/kick-thumpy.mp3">Thumpy Kick</option>
+                    <option value="./sounds/kick-top.mp3">Punchy Kick</option>
+                </select>
+            </div>
+            <div class="kick">
+                <div class="pad kick-pad b0"></div>
+                <div class="pad kick-pad b1"></div>
+                <div class="pad kick-pad b2"></div>
+                <div class="pad kick-pad b3"></div>
+                <div class="pad kick-pad b4"></div>
+                <div class="pad kick-pad b5"></div>
+                <div class="pad kick-pad b6"></div>
+                <div class="pad kick-pad b7"></div>
+            </div>
+        </div>
+            <div class="clap-track">
+                <div class="controls">
+                    <h1>Clap</h1>
+                    <button data-track ="1" class="mute clap-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="clap-select" id="clap-select">
+                        <option value="./sounds/clap-1.mp3">EDM Clap</option>
+                        <option value="./sounds/clap-2.mp3">Classic Clap</option>
+                        <option value="./sounds/clap-3.mp3">Hip Hop Clap</option>
+                    </select>
+                </div>
+                <div class="clap">
+                    <div class="pad clap-pad b0"></div>
+                    <div class="pad clap-pad b1"></div>
+                    <div class="pad clap-pad b2"></div>
+                    <div class="pad clap-pad b3"></div>
+                    <div class="pad clap-pad b4"></div>
+                    <div class="pad clap-pad b5"></div>
+                    <div class="pad clap-pad b6"></div>
+                    <div class="pad clap-pad b7"></div>
+                </div>
+            </div>
+        <div class="hihat-track">
+                <div class="controls">
+                    <h1>Hi Hat</h1>
+                    <button data-track ="2" class="mute hihat-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="hihat-select" id="hihat-select">
+                        <option value="./sounds/hihat-1.mp3">Hi hat One</option>
+                        <option value="./sounds/hihat-2.mp3">Hi hat Two</option>
+                    </select>
+                </div>
+                <div class="hihat">
+                    <div class="pad hihat-pad b0"></div>
+                    <div class="pad hihat-pad b1"></div>
+                    <div class="pad hihat-pad b2"></div>
+                    <div class="pad hihat-pad b3"></div>
+                    <div class="pad hihat-pad b4"></div>
+                    <div class="pad hihat-pad b5"></div>
+                    <div class="pad hihat-pad b6"></div>
+                    <div class="pad hihat-pad b7"></div>
+                </div>
+        </div>
+        <div class="chant-track">
+                <div class="controls">
+                    <h1>Chant</h1>
+                    <button data-track ="3" class="mute chant-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="chant-select" id="chant-select">
+                        <option value="./sounds/chant-1.mp3">Hey!</option>
+                        <option value="./sounds/chant-2.mp3">Whaaa</option>
+                    </select>
+                </div>
+                <div class="chant">
+                    <div class="pad chant-pad b0"></div>
+                    <div class="pad chant-pad b1"></div>
+                    <div class="pad chant-pad b2"></div>
+                    <div class="pad chant-pad b3"></div>
+                    <div class="pad chant-pad b4"></div>
+                    <div class="pad chant-pad b5"></div>
+                    <div class="pad chant-pad b6"></div>
+                    <div class="pad chant-pad b7"></div>
+                </div>
+        </div>
+        <button class="play">Play</button>
+        <div class="tempo">
+            <input type="range" class="tempo-slider" max="300" min="20" value="160"> 
+            <p>Tempo: <span class="tempo-nr">160</span></p>
+        </div>
+    </div>
+
+    <audio class="kick-sound" src="./sounds/kick-classic.mp3"></audio>
+    <audio class="clap-sound" src="./sounds/clap-1.mp3"></audio>
+    <audio class="hihat-sound" src="./sounds/hihat-1.mp3"></audio>
+    <audio class="chant-sound" src="./sounds/chant-1.mp3"></audio>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="./app.js"></script>
+</body>
+</html>
+
